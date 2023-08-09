@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #673DC4 0%, #B0F 100%); 
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+
+.image:hover {
+  position: relative;
+  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+
+.hide {
+    display: none;
+}
+
+/* screen1 - ajustes especificos */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #34355B;
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    width: min(42.8rem, 90%);
+}
+
+.text p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #34355B;
+    margin-bottom: 2.0rem;
+    text-align: center;
+}
+
+/* screen2 - ajustes especificos */
+
+.anotherText p {
+background-color: #E4EDF1;
+box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+font-family: 'Dancing Script', cursive;
+text-align: center;
+font-size: 2.4rem;
+
+padding: 1.0rem;
+
+border: none;
+
+position: relative;
+animation: slide-up 1.5s ease-out;
+}
+
+@keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+.oppenCookie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border-radius: 4px;
+    padding: 1.6rem;
+
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 15px;
+    background-color: #FF9500;
+    border: none;
+
+    cursor: pointer;
+    transition: background .3s;
+}
+
+button:hover {
+    background-color: #cd7904;
+}
+
